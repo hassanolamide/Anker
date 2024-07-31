@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DIN Next",sans-serif;
+}
+
+.header{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+header {
+    background-color: #daa800;
+    height: 100%;
+    min-height: 30vh;
+    width: 100%;
+    padding: 30px 0px;
+
+    p {
+      color: white;
+      width: 95%;
+      font-weight: 500;
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+    h1 {
+      color: white;
+    }
+  }
+  .sec{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(247, 248, 250);
+  }
+  .first {
+    height: 100%;
+    position: sticky;
+    top: 0px;
+    width: 25%;
+    padding: 20px 20px;
+  
+    p {
+      font-weight: 100;
+      font-size: 20px;
+      align-items: start;
+      text-align: start;
+    } 
+    .bod {
+      border-bottom: 2px solid black;
+      width: 90%;
+    }
+  }
+  .color {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 90%;
+    h2 {
+      color: #daa800;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-toggle {
+    background-color: rgb(247, 248, 250);
+    color: #daa800;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 20px 0px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    top: 100%;
+    right: 70px;
+    background-color: rgb(247, 248, 250);
+    width: 300px;
+  }
+  .dropdown-menu.show {
+    display: flex;
+    position: relative;
+    margin-right: -300px;
+    left: -300px;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center; 
+    padding: 10px ;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item input[type="checkbox"] {
+  margin: 0px 30px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  .second {
+    width: 75%;
+    height: 100%;
+  }
+  .pro {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  .dropdowns {
+    position: relative;
+    display: inline-block;
+  }
+   
+  .dropdowns-toggle {
+    background-color: rgb(247, 248, 250);
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 20px 5px;
+  }
+  
+  .dropdowns-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background-color: white;
+    z-index: 1;
+    width: 200px;
+    height: 330px;
+  }
+  
+  .dropdowns-item {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+    p {
+      color: #171717;
+    }
+  }
+  
+  .dropdowns-item:hover {
+    background-color: #f1f1f1;
+  }
+  .sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+      font-weight: 500;
+    }
+  }
+  .card {
+    background-color: white;
+    width: 470px;
+    height: 580px;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px 0px;
+    margin: 10px 10px;
+  
+    .imgs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    h1 {
+      width: 93%;
+      font-size: 20px;
+      padding: 0px 15px;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 600;
+      padding: 0px 15px;
+      span {
+        font-size: 18px;
+        font-weight: 100;
+        display: inline-block;
+        position: relative;
+        color: rgb(88, 86, 86);
+      }
+      span::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40%;
+        border-bottom: 1px solid rgb(161, 161, 161);
+      }
+    }
+  }
+  .cards {
+    position: absolute;
+    background-color: #daa800;
+    width: 60px;
+    height: 60px;
+    right: 30px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    p {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      color: white;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+  .card-body {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-between;
+  }
+  .but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 30px 0px;
+    padding-bottom: 120px;
+    button {
+      width: 60px;
+      height: 60px;
+      background-color: rgb(247, 248, 250);
+      border: 1px solid rgb(223, 223, 223);
+      cursor: pointer;
+    }
+    button:hover{
+      border:2px solid black;
+    }
+  }
+   
+  .get {
+    background-image: url(./img/promo_1400x.webp);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    h1 {
+      font-size: 40px;
+      padding: 20px 0px;
+    }
+  }
+  .inp input {
+    width: 500px;
+    height: 55px;
+    border-radius: 50px 0 0 50px;
+    border: none;
+    text-align: start;
+    padding: 0px 15px;
+  }
+  .inp input:hover {
+    border: 2px solid rgb(100, 100, 222);
+  }
+  .inp button {
+    width: 200px;
+    height: 55px;
+    border-radius: 0% 30px 30px 0%;
+    border: none;
+    background-color: rgb(2, 156, 209);
+    color: white;
+    font-weight: 700;
+  }
+  .check {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .check a:hover {
+    color: blue;
+  }
+  .check input {
+    width: 40px;
+    height: 15px;
+    border: 5px solid red;
+  }
+  .check p a {
+    cursor: pointer;
+    color: white;
+  }
+  .hov{
+    display: block;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .hov:hover{
+    display: block;
+    opacity: 1;
+  }
+  .learn { 
+    position: absolute;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 20vh;
+    display: flex;
+    top: 400px;
+    flex-direction: column;
+   button {
+      width: 40%;
+      height: 50px;
+      margin: 5px 0px;
+      border-radius: 50px;
+      border: 2px solid #daa800;
+      color: #daa800;
+      background-color: white;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: rgba(219, 217, 217, 0.982);
+      border: none;
+    }
+  }
+
+  .cart {
+    background-color:#daa800;
+    color: red;
+    font-weight: 800;
+  }
+  .cart:hover{
+    background-color: rgba(219, 217, 217, 0.982);
+  }
+  @media (max-width:640px) {
+    .overall{
+      padding: 0;
+    }
+    .second{
+      width: 100%;
+    }
+    header{
+      width:100%;
+      .header{
+        padding: 20px 24px;
+      }
+      h1{
+        font-size: 32px;
+        font-weight: 700;
+      }
+      p{
+        width: 90%;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    }
+    .sort{
+      p{
+        text-align: center;
+      align-items: center;
+      justify-content: center;
+      }
+    }
+    
+    .card-body{
+     width: 100%;
+     background-color:rgb(247, 248, 250);
+     
+    }
+    .get{
+      width:100%;
+      h2{
+        font-size: 12px;
+        width: 70% ;
+        font-weight: 700;
+      }
+      h1{
+        font-size: 20px;
+        width: 80%;
+        line-height: 2;
+        font-weight: 700;
+      }
+    }
+    .inp{
+      display: flex;
+      flex-direction: row;
+      input{
+        width: 200px;
+        font-size: 10px;
+        height: 30px;
+      }
+      button{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+      }
+    }
+    section{
+      width: 100%;
+      background-color: blue;
+    }
+    .check{
+      align-items: center;
+      justify-content: center;
+      p{
+        text-align: start;
+        font-size: 10px;
+        width: 80%;
+      }
+    }
+    .but{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+  }
+  .review-system {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .star-ratings {
+    display: flex;
+    margin-right: 20px;
+  }
+  .star-rating {
+    display: flex;
+   width: 20%;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+  }
+  .s5{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .star {
+    color: gold;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  .stars{
+    color: gold;
+    font-size: 20px;
+  }
+  
+  .review-counts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    line-height: 1.8;
+
+  }
+  
+  .count {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .write-review-btn {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .write-review-btn:hover {
+    background-color: #333;
+  }
+  .stra{
+    width: 700px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50px;
+  }
+  .strai{
+    width: 7r00px;
+    height: 10px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 50px;
+  }
+ .sha{
+    font-weight: 800;
+    font-size: 14px;
+  }

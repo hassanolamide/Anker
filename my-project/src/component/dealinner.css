@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DIN Next",sans-serif;
+}
+
+.App {
+    display: flex;
+    width: 100%;
+    padding: 30px 30px;
+  }
+  
+  .image-container {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  
+  .image-container img {
+    margin: 10px 0;
+    width: 100px; 
+    height: 100px;
+    cursor: pointer;
+  }
+  .whole{
+    display: flex;
+    width: 50%;
+    img{
+      width: 500px;
+      height: 600px;
+    }
+  }
+  .product-page {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .product-title {
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+  
+   text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .product-pricing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(223,223,223);
+  }
+  
+  .current-price {
+    font-size: 24px;
+    font-weight: bold;
+    color:rgb(34,157,213);
+    margin-right: 10px;
+  }
+  
+  .original-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    color:rgb(103,103,103);
+    margin-right: 10px;
+  }
+  
+  .discount {
+    font-size: 11px;
+    width: 60px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    
+    color: white;
+
+    background-color: rgb(222,42,42);
+  }
+  
+  .product-details {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 30px 0px;
+  }
+  .product-advantage,
+.product-capacity,
+.product-charging,
+.product-recharge,
+.product-includes {
+  margin-bottom: 10px;
+  width: 90%;
+  text-align: left;
+}
+
+  strong {
+    font-weight: bold;
+  }
+  .product-quantity {
+    margin: 20px 0;
+    text-align: left;
+  }
+ 
+  .product-quantity label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(223,223,223);
+    width: 25%;
+    justify-content: center;
+   margin: 10px 0px;
+   padding: 5px 0px;
+  }
+  
+  .quantity-control button {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 0px;
+    margin: 0 5px;
+  }
+  
+
+  .quantity-control input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .product-actions {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .product-actions button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .add-to-cart {
+    background-color:rgb(2,168,225);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+  }
+  
+  .buy-it-now {
+   
+    color: black;
+    border: none;
+  }
+  
+  .add-to-wishlist {
+    background-color:rgb(2,168,225);
+    color: white;
+    border: none;
+    border-radius: 1px;
+  }
+  
+  .payment-methods {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .payment-icons  {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  
+  .payment-icons img {
+    border: 2px solid rgb(240,240,240);
+    width: 40px;
+    margin: 0 5px;
+  }
+  .desc{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .desc li {
+    text-decoration: none;
+  list-style-type: none;
+  }
+  .note{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  
+  }
+  .desc li  {
+    text-decoration: none;
+    color:rgb(130, 128, 128) ;
+    font-size: 12px; 
+    text-align: left;
+    cursor: pointer;
+  }
+  .desc li:hover {
+ border-bottom: 2px solid black;
+  }
+  .bob{
+    display: flex;
+    border-bottom: 1px solid rgb(223,223,223);
+   width: 100%;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  section{
+    display: block;
+    background-color: white;
+  }
+  .content{
+    display: none;
+  }
+  .show-content{
+    display: block;
+  }
+  .product-description {
+    width: 70%;
+    padding: 20px 0px;
+    margin: auto;
+   text-align: left;
+  }
+  
+  .product-description h1 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .product-description ul {
+    list-style-type:disc;
+    padding: 0;
+   
+  }
+  
+  .product-description ul li {
+    margin-bottom: 10px;
+    padding: 0px 15px;  
+     font-size: 13px;
+     width: 100%;
+  }
+  
+  .product-description ul li strong {
+   line-height: 2;
+    
+   
+  }
+  .cont{
+    line-height: 1.5em;
+    width: 70%;
+    padding: 20px 0px;
+    margin: auto;
+   text-align: left;
+    
+  }
+  
+  .cont ul {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  .cont ul li{
+    padding: 15px 0px;
+  }
+  
+  .cont ul li strong{
+    font-weight: 500;
+  }
+  .apple{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 20px 0px;
+  }
+  .usb{
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 20px 0px;
+  }
+  .review {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 80px;
+    margin: 20px auto;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ffd700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+ 
+  
+  .username {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .rev{
+    width: 85%;
+  }
+  .review-details {
+    align-items:start;
+    justify-content: start;
+    display: flex;
+  
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .rating {
+    color: gold;
+    margin-right: 5px;
+  }
+  
+  .date {
+    margin-right: 10px;
+  }
+  
+  .verified {
+    color: green;
+  }
+  
+  .review-body {
+    font-size: 14px;
+    line-height: 2;
+    justify-content: start;
+    text-align: start;
+    
+    font-weight: 600;
+  }
