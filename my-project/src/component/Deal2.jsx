@@ -50,7 +50,7 @@ const Deal2 = () => {
       </header>
       <section className="sec">
         <div className="first hidden md:block">
-          <p>Filters</p>
+          <p className="text-[12px]">Filters</p>
           <div className="bod"></div>
           <div>
             <div className="color">
@@ -438,7 +438,7 @@ const Deal2 = () => {
         <div className="second">
           <div className="pro">
             <p>32 Products</p>
-            <div className="sort hidden md:block">
+            <div className="sort hidden md:block"style={{display:"flex"}} >
               <div>
                 <p>
                   sort by <span>Best Selling</span>

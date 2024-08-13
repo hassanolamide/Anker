@@ -55,13 +55,13 @@ const Deal = () => {
     <div className="w-full overall">
       <header>
         <div className="header">
-        <h1 >Deals</h1>
-        <p >
-          Unlock incredible savings with Anker Philippines Deals. Explore our
-          exclusive offers on top-quality chargers, cables, power banks, and
-          more. Don’t miss out on these limited-time discounts and enjoy the
-          best in technology at unbeatable prices.
-        </p>
+          <h1>Deals</h1>
+          <p>
+            Unlock incredible savings with Anker Philippines Deals. Explore our
+            exclusive offers on top-quality chargers, cables, power banks, and
+            more. Don’t miss out on these limited-time discounts and enjoy the
+            best in technology at unbeatable prices.
+          </p>
         </div>
       </header>
       <section className="sec">
@@ -453,13 +453,14 @@ const Deal = () => {
         </div>
         <div className="second">
           <div className="pro">
-            <p >32 Products</p>
-            <div className="sort hidden md:block" >
-                
-              <div className="dropdowns">
-              <p>
-                  sort by <span>Best Selling</span>
+            <p>32 Products</p>
+            <div className="sort hidden md:block" style={{ display: "flex" }}>
+              <div>
+                <p>
+                  sort by <strong>Best Selling</strong>
                 </p>
+              </div>
+              <div className="dropdowns">
                 <button
                   onClick={() => toggleDropdown("color14")}
                   className="dropdowns-toggle"
@@ -508,13 +509,24 @@ const Deal = () => {
                   <p>SAVE 5%</p>
                 </div>
                 <img src={img} className="imgs" alt="#" />
-                <h1>Anker PowerCore Metro Essential (20,000mAh) PD</h1>
+                <h1 className="flex flex-col">
+                  Anker PowerCore Metro Essential (20,000mAh) PD
+                  <span className="rating flex ">
+                    ★★★★★ <div className="text-black pl-[5px]">(5)</div>
+                  </span>
+                </h1>
                 <p>
                   ₱3,755.25 <span> ₱3,795.00</span>
                 </p>
                 <div className="hov">
                   <div className="learn">
-                  <button><Link to  ="/Dealinner" className="text-yellow-500 hover:text-yellow-500">Learn more</Link></button>
+                    <button>
+                      <Link to="/dealinner"
+                        className="text-yellow-500 hover:text-yellow-500"
+                      >
+                        Learn more
+                      </Link>
+                    </button>
                     <button
                       className="cart"
                       style={{ color: "white", backgroundColor: "#daa800" }}
@@ -1058,7 +1070,7 @@ const Deal = () => {
         <div className="check">
           <input type="checkbox" name="" />
           <p>
-            I  agree to the <a href="#">Terms of Service</a> and{" "}
+            I agree to the <a href="#">Terms of Service</a> and{" "}
             <a href="#">Privacy Policy</a>
           </p>
         </div>

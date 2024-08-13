@@ -38,7 +38,7 @@
   }
   
   .product-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     width: 100%;
   
@@ -95,10 +95,11 @@
   margin-bottom: 10px;
   width: 90%;
   text-align: left;
+  font-size: 12px;
 }
 
   strong {
-    font-weight: bold;
+    font-weight: 600;
   }
   .product-quantity {
     margin: 20px 0;
@@ -127,7 +128,14 @@
     margin: 0 5px;
   }
   
+  .quantity-control button:focus{
+    outline: 0px;
 
+  }
+  .quantity-control button:hover{
+    border: none;
+
+  }
   .quantity-control input {
     width: 40px;
     text-align: center;
@@ -135,21 +143,23 @@
   }
   
   .product-actions {
-    display: flex;
-    width: 80%;
+  
+    width: 90%;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+  
+    margin:0px 30px 0px 0px;
   }
   
   .product-actions button {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     margin: 10px 0;
     cursor: pointer;
     border: none;
+  }
+  .product-actions button:focus{
+    outline: 0px;
   }
   
   .add-to-cart {
@@ -174,7 +184,7 @@
   }
   
   .payment-methods {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
   }
   
@@ -183,7 +193,7 @@
     width: 70%;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin:0px 30px 0px 0px;
     justify-content: space-between;
     padding: 20px 0px;
   }
@@ -312,7 +322,12 @@
     padding: 20px 80px;
     margin: 20px auto;
   }
-  
+  .review-system {
+    justify-content: center;
+
+    width: 80%;
+    align-items: center;
+  }
   .review-header {
     display: flex;
     align-items: center;
@@ -364,10 +379,14 @@
   }
   
   .review-body {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 2;
     justify-content: start;
     text-align: start;
     
-    font-weight: 600;
+    font-weight: 500;
+  }
+  .stra{
+    width: 500px;
+  
   }

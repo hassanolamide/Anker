@@ -19,6 +19,7 @@ import img15 from "../component/img/CS_195x.webp";
 const Dealinnerr = () => {
   const [toggle, setToggle] = useState(1);
 
+
   const [quantity, setQuantity] = useState(1);
   function updateToggle(id) {
     setToggle(id);
@@ -62,8 +63,8 @@ const Dealinnerr = () => {
             Anker PowerCore Metro Essential (20,000mAh) PD
           </h1>
           <div className="product-pricing">
-            <span className="current-price">₱3,339.60</span>
-            <span className="original-price">₱3,795.00</span>
+            <span className="current-price text-[18px]">₱3,339.60</span>
+            <span className="original-price text-[10px]">₱3,795.00</span>
             <span className="discount">SAVE 12%</span>
           </div>
           <div className="product-details">
@@ -304,17 +305,17 @@ const Dealinnerr = () => {
         <img src={img14} alt="img3" className="w-[80px]" />
         <img src={img15} alt="img4" className="w-[80px]" />
       </div>
-      <div className="review-system">
+      <div className="review-system ">
         <div className="flex flex-col">
-          <p className="s5">5</p>
+          <p className="s5 text-[24px]">5</p>
           <div className="star-rating">
             {[...Array(5)].map((_, index) => (
-              <div key={index} className="stars">
+              <div key={index} className="stars w-[80%] text-[18px]">
                 ★
               </div>
             ))}
           </div>
-          <p>5 reviews</p>
+          <p className="text-[10px]">5 reviews</p>
         </div>
         <div className="flex flex-row">
           <div className="review-counts">
@@ -331,7 +332,7 @@ const Dealinnerr = () => {
               </div>
             ))}
           </div>
-          <div className="pt-3">
+          <div className="pt-3 pr-[10px]">
             <div className="stra mb-7"></div>
             <div className="strai mb-7"></div>
             <div className="strai mb-7"></div>
@@ -340,18 +341,18 @@ const Dealinnerr = () => {
           </div>
         </div>
         <div>
-          <p className="sha">Share your experience</p>
+          <p className="text-[11px] font-bold">Share your experience</p>
           <div className="star-rating">
             {[...Array(5)].map((_, index) => (
               <div
                 key={index}
-                className="stars justify-center items-center m-auto"
+                className="stars justify-center items-center  m-auto"
               >
                 ★
               </div>
             ))}
           </div>
-          <button className="write-review-btn">Write a Review</button>
+          <button className="write-review-btn text-[12px] w-[150px]">Write a Review</button>
         </div>
       </div>
       <div className="review">
@@ -362,7 +363,7 @@ const Dealinnerr = () => {
                 <p className="font-light ">J</p>
               </div>
             </div>
-            <p className="font-bold pt-4">jolo</p>
+            <p className="font-bold text-[12px] pt-4">jolo</p>
           </div>
           </div>
           <div className="rev">
@@ -389,7 +390,7 @@ const Dealinnerr = () => {
                 <p className="font-light ">S</p>
               </div>
             </div>
-            <p className="font-bold pt-4">SHALYN</p>
+            <p className="font-bold text-[12px] pt-4">SHALYN</p>
           </div>
           </div>
           <div className="rev">
@@ -412,7 +413,7 @@ const Dealinnerr = () => {
                 <p className="font-light ">w</p>
               </div>
             </div>
-            <p className="font-bold pt-4">Whaylie Bayya</p>
+            <p className="font-bold text-[12px] pt-4">Whaylie Bayya</p>
           </div>
           </div>
           <div className="rev">
@@ -435,7 +436,7 @@ const Dealinnerr = () => {
                 <p className="font-light ">J</p>
               </div>
             </div>
-            <p className="font-bold pt-4">Johann</p>
+            <p className="font-bold text-[12px] pt-4">Johann</p>
           </div>
           </div>
           <div className="rev">
@@ -458,7 +459,7 @@ const Dealinnerr = () => {
                 <p className="font-light ">E</p>
               </div>
             </div>
-            <p className="font-bold pt-4">Eunice</p>
+            <p className=" text-[12px] font-bold pt-4 ">Eunice</p>
           </div>
           </div>
           <div className="rev">
@@ -473,6 +474,8 @@ const Dealinnerr = () => {
         </div>
         </div>
       </div>
+      
+
     </>
   );
 };
